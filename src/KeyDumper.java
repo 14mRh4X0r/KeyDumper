@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class KeyDumper extends Plugin {
     public static final Logger LOG = Logger.getLogger("Minecraft.KeyDumper");
     public static final String NAME = "KeyDumper";
-    public static final String VERSION = "0.1-132";
+    public static final String VERSION = "0.1-142";
     public static final String AUTHOR = "14mRh4X0r";
     
     public static final BaseCommand DUMPKEYS = new BaseCommand(
@@ -25,7 +25,7 @@ public class KeyDumper extends Plugin {
 
         @Override
         protected void execute(MessageReceiver caller, String[] parameters) {
-            KeyPair pair = etc.getMCServer().E();
+            KeyPair pair = etc.getMCServer().F();
             
             // The following was taken from http://snipplr.com/view/18368/
             PrivateKey privateKey = pair.getPrivate();
